@@ -121,8 +121,7 @@ function AdvancedMode() {
   };
 
   return (
-    <div className={classes.card}>
-      <Paper className={classes.pseudoCard} />
+    <Card>
       <div className={classes.relativeCard}>
         <Typography variant="h2" className={classes.cardTitle}>
           Advanced Mode
@@ -142,8 +141,32 @@ function AdvancedMode() {
           <Typography variant="h4">back</Typography>
         </Button>
       </div>
-    </div>
+    </Card>
   );
+  // return (
+  //   <div className={classes.card}>
+  //     <Paper className={classes.pseudoCard} />
+  //     <div className={classes.relativeCard}>
+  //       <Typography variant="h2" className={classes.cardTitle}>
+  //         Advanced Mode
+  //       </Typography>
+  //       <Grid container justify="center" className={classes.grid}>
+  //         {doughSettings.map((settings, index) => renderInputs(settings))}
+  //         <Grid item xs={12} sm={12} className={classes.gridItem}>
+  //           {results.map((settings, index) => renderResults(settings, index))}
+  //         </Grid>
+  //       </Grid>
+  //       <Button
+  //         className={classes.gridItem}
+  //         onClick={() =>
+  //           dispatch(allActions.userActions.changeActiveCard("skill"))
+  //         }
+  //       >
+  //         <Typography variant="h4">back</Typography>
+  //       </Button>
+  //     </div>
+  //   </div>
+  // );
 }
 
 export default AdvancedMode;
